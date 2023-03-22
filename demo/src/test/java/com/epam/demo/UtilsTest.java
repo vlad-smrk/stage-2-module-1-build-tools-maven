@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UtilsTest {
     @Test
     void returnsTrueWhenAllPositive() {
-        assertTrue(Utils.isAllPositiveNumbers(List.of("1", "2", "3")));
+        assertTrue(Utils.isAllPositiveNumbers(List.of("1.1", "2", "3.42")));
     }
 
     @Test
@@ -19,7 +19,7 @@ class UtilsTest {
 
     @Test
     void returnsFalseWhenNegative() {
-        assertFalse(Utils.isAllPositiveNumbers(List.of("1", "3", "-1")));
+        assertFalse(Utils.isAllPositiveNumbers(List.of("1", "3", "-1.1")));
     }
 
 }
