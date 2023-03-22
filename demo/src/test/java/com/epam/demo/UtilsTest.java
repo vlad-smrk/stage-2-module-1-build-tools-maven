@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class UtilsTest {
+public class UtilsTest {
     @Test
     void returnsTrueWhenAllPositive() {
         assertTrue(Utils.isAllPositiveNumbers(List.of("1", "2", "3")));
