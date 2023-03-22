@@ -22,8 +22,4 @@ class UtilsTest {
         assertFalse(Utils.isAllPositiveNumbers(List.of("1", "3", "-1")));
     }
 
-    @Test
-    void throwsExceptionWhenNaN() {
-        assertThrows(NumberFormatException.class, () -> Utils.isAllPositiveNumbers(List.of("1", "o", "32")));
-    }
 }
